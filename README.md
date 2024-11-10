@@ -23,15 +23,15 @@ Powered by a 9V battery connected through a breadboard power supply module, maki
 
 ## Required Components
 
-Arduino Nano
-DHT11 Temperature and Humidity Sensor
-16x2 LCD Display
-Red LED for error indication
-10k Potentiometer for LCD contrast adjustment
-10k Resistor (for DHT11)
-330 Ohm Resistor (for LED)
-Breadboard and connecting wires
-9V Battery with breadboard power supply
+Arduino Nano  
+DHT11 Temperature and Humidity Sensor  
+16x2 LCD Display  
+Red LED for error indication  
+10k Potentiometer for LCD contrast adjustment  
+10k Resistor (for DHT11)  
+330 Ohm Resistor (for LED)  
+Breadboard and connecting wires  
+9V Battery with breadboard power supply  
 
 
 ## Setup and Usage
