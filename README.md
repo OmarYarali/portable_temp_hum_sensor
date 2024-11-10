@@ -39,7 +39,6 @@ Breadboard and connecting wires
 Connect Components:
 
 Follow the provided circuit diagram to connect all components on the breadboard.
-
 Refer to the provided photos for step-by-step guidance on connecting the LCD display and the DHT11 sensor to the breadboard. Provided images show the exact placement of each component, simplifying the wiring process.
 
 Extra Explanation:
