@@ -34,6 +34,28 @@ Breadboard and connecting wires
 9V Battery with breadboard power supply  
 
 
+## Code Overview
+
+The code for this portable temperature and humidity sensor uses an Arduino Nano, a DHT11 sensor, and a 16x2 LCD display to show real-time environmental readings. Below is a breakdown of how the code works:
+
+Error Handling with the errorFlag Variable
+
+The program continuously reads temperature and humidity data from the DHT11 sensor. If the sensor fails to provide valid data (i.e., returns NaN for either temperature or humidity), the errorFlag is set to 1. This flag triggers the following:
+
+The LCD screen displays the message "Failed to Read!" to alert the user.
+A red LED is turned on as a visual indication of the error.
+Once valid data is received again, the errorFlag is reset to 0, and the system resumes normal operation, updating the LCD with the new readings and turning off the error LED.
+
+Storing Last Readings
+
+The code stores the last valid temperature and humidity readings in the variables lastTemperature and lastHumidity. This is done to prevent redundant updates to the LCD, optimizing the display and reducing unnecessary processing. The display is updated only when there is a change in either temperature or humidity values.
+This method ensures that the readings shown on the LCD are always current, but avoids flickering or wasting resources by refreshing the screen for every loop iteration, especially when values haven't changed.
+
+Why Functions?
+
+The use of functions like displayReadings helps to keep the code modular and easy to manage. This function is responsible for updating the LCD with the current temperature and humidity values. By separating the logic into functions, we make the code more organized, easier to debug, and reusable for potential future expansions (e.g., adding more sensors or changing the display format).
+
+
 ## Setup and Usage
 
 Connect Components:
